@@ -1,0 +1,1061 @@
+/* =========================================
+   THE TRUTH OF BEAUTY
+   MAIN STYLESHEET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f5f1ec;
+    color: #171515;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+section {
+    width: 100%;
+}
+
+
+/* =========================================
+   TYPOGRAPHY
+========================================= */
+
+h1,
+h2,
+h3,
+.footer-title {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    min-height: 100vh;
+    width: 100%;
+    padding: 55px 8% 35px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: relative;
+    overflow: hidden;
+
+    color: #f5f1ec;
+
+    background:
+        linear-gradient(
+            rgba(20, 16, 16, 0.45),
+            rgba(20, 16, 16, 0.55)
+        ),
+        url("images/hero.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+    color: #d8a0a8;
+}
+
+.hero h1 {
+    font-size: clamp(75px, 13vw, 190px);
+    line-height: 0.82;
+    letter-spacing: -4px;
+}
+
+.hero-subtitle {
+    margin-top: 40px;
+    font-size: clamp(18px, 2vw, 27px);
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 45px;
+
+    padding: 15px 24px;
+
+    border: 1px solid rgba(245, 241, 236, 0.6);
+    border-radius: 100px;
+
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+    background: #f5f1ec;
+    color: #171515;
+}
+
+.hero-bottom {
+    display: flex;
+    justify-content: space-between;
+
+    border-top: 1px solid rgba(245, 241, 236, 0.3);
+    padding-top: 18px;
+
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #d9d2cd;
+}
+
+
+/* =========================================
+   GENERAL SECTION
+========================================= */
+
+.about,
+.statistics,
+.comparison,
+.evidence,
+.why,
+.change,
+.impact,
+.critical,
+.message,
+.movement,
+.sources {
+    padding: 140px 8%;
+}
+
+.about > p,
+.comparison > p,
+.evidence > p,
+.why > p,
+.change > p,
+.impact > p,
+.critical > p,
+.message > p,
+.movement > p,
+.sources > p {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #9b4d5a;
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   01 — ABOUT
+========================================= */
+
+.about {
+    background: #f5f1ec;
+}
+
+.about h2 {
+    max-width: 1100px;
+    font-size: clamp(55px, 8vw, 125px);
+    line-height: 0.95;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+
+    max-width: 1000px;
+    margin-top: 90px;
+    margin-left: auto;
+}
+
+.about-content p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #55504c;
+}
+
+.about-content strong {
+    color: #171515;
+}
+
+
+/* =========================================
+   02 — STATISTICS
+========================================= */
+
+.statistics {
+    background: #171515;
+    color: #f5f1ec;
+}
+
+.statistics > p {
+    color: #d8a0a8;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+.statistics h2 {
+    max-width: 950px;
+    font-size: clamp(55px, 7vw, 105px);
+    line-height: 0.95;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+    margin-top: 90px;
+}
+
+.stat-card {
+    min-height: 350px;
+    padding: 40px;
+
+    border: 1px solid rgba(245, 241, 236, 0.25);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: 0.4s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+    background: #262222;
+}
+
+.stat-card strong {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(55px, 7vw, 95px);
+    font-weight: 400;
+    line-height: 1;
+    color: #d8a0a8;
+}
+
+.stat-card span {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #d9d2cd;
+}
+
+
+/* =========================================
+   03 — COMPARISON
+========================================= */
+
+.comparison {
+    background: #f5f1ec;
+}
+
+.comparison h2 {
+    max-width: 900px;
+    font-size: clamp(55px, 7vw, 105px);
+    line-height: 0.95;
+}
+
+.comparison-grid {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+
+    margin-top: 90px;
+}
+
+.concept-card {
+    width: 100%;
+    min-height: 560px;
+    padding: 45px;
+
+    background: #ffffff;
+    border: 1px solid #ded8d2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: 0.4s ease;
+}
+
+.concept-card:hover {
+    transform: translateY(-12px);
+}
+
+.concept-card .number {
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px;
+    color: #9b4d5a;
+}
+
+.concept-card > p:not(.description) {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #9b4d5a;
+}
+
+.concept-card h3 {
+    font-size: clamp(38px, 4vw, 58px);
+    line-height: 1.05;
+}
+
+.concept-card .description {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #55504c;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: #ded8d2;
+    margin: 25px 0;
+}
+
+.dark-card {
+    background: #171515;
+    color: #f5f1ec;
+    border-color: #171515;
+}
+
+.dark-card .description {
+    color: #d9d2cd;
+}
+
+.dark-card .line {
+    background: rgba(245, 241, 236, 0.25);
+}
+
+.dark-card .number,
+.dark-card > p:not(.description) {
+    color: #d8a0a8;
+}
+
+
+/* =========================================
+   04 — EVIDENCE
+========================================= */
+
+.evidence {
+    background: #ebe5df;
+}
+
+.evidence h2 {
+    max-width: 1100px;
+    font-size: clamp(55px, 8vw, 115px);
+    line-height: 0.92;
+}
+
+.evidence-grid {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+
+    margin-top: 90px;
+}
+
+.evidence-card {
+    width: 100%;
+    min-height: 520px;
+    padding: 42px;
+
+    background: #ffffff;
+    border: 1px solid #ded8d2;
+
+    display: flex;
+    flex-direction: column;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.evidence-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 60px rgba(23, 21, 21, 0.12);
+}
+
+.evidence-number {
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px;
+    color: #9b4d5a;
+}
+
+.evidence-source {
+    margin-top: 35px;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    color: #77706b;
+}
+
+.evidence-card h3 {
+    margin-top: 18px;
+
+    font-size: clamp(32px, 3.5vw, 50px);
+    line-height: 1.05;
+}
+
+.evidence-card strong {
+    margin-top: auto;
+
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(55px, 6vw, 85px);
+    font-weight: 400;
+
+    line-height: 1;
+
+    color: #9b4d5a;
+}
+
+.evidence-card > p:not(.evidence-source) {
+    margin-top: 25px;
+
+    max-width: 560px;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #55504c;
+}
+
+.evidence-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-top: 25px;
+}
+
+.evidence-tags span {
+    padding: 8px 13px;
+
+    border: 1px solid #cfc7c1;
+    border-radius: 100px;
+
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.dark-evidence {
+    background: #171515;
+    color: #f5f1ec;
+    border-color: #171515;
+}
+
+.dark-evidence .evidence-source {
+    color: #aaa19b;
+}
+
+.dark-evidence > p:not(.evidence-source) {
+    color: #d9d2cd;
+}
+
+.dark-evidence .evidence-number,
+.dark-evidence strong {
+    color: #d8a0a8;
+}
+
+.dark-evidence .evidence-tags span {
+    border-color: #514a47;
+    color: #d9d2cd;
+}
+
+
+/* =========================================
+   05 — WHY IT MATTERS
+========================================= */
+
+.why {
+    background: #f5f1ec;
+}
+
+.why h2 {
+    max-width: 1050px;
+    font-size: clamp(55px, 8vw, 115px);
+    line-height: 0.92;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+    margin-top: 90px;
+}
+
+.why-grid > div {
+    padding: 35px;
+
+    border-top: 1px solid #9b4d5a;
+}
+
+.why-grid span {
+    color: #9b4d5a;
+    font-family: 'DM Serif Display', serif;
+    font-size: 25px;
+}
+
+.why-grid h3 {
+    margin-top: 80px;
+    font-size: 40px;
+}
+
+.why-grid p {
+    margin-top: 25px;
+
+    font-size: 15px;
+    line-height: 1.7;
+    color: #55504c;
+}
+
+
+/* =========================================
+   06 — SOCIAL CHANGE
+========================================= */
+
+.change {
+    background: #171515;
+    color: #f5f1ec;
+}
+
+.change > p {
+    color: #d8a0a8;
+}
+
+.change h2 {
+    max-width: 1050px;
+    font-size: clamp(55px, 8vw, 115px);
+    line-height: 0.92;
+}
+
+.change-content {
+    margin-top: 90px;
+    border-top: 1px solid rgba(245, 241, 236, 0.25);
+}
+
+.change-item {
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+    padding: 35px 0;
+
+    border-bottom: 1px solid rgba(245, 241, 236, 0.25);
+}
+
+.change-item span {
+    color: #d8a0a8;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.change-item p {
+    max-width: 700px;
+
+    font-size: 18px;
+    line-height: 1.7;
+    color: #d9d2cd;
+}
+
+
+/* =========================================
+   07 — IMPACT
+========================================= */
+
+.impact {
+    background: #ebe5df;
+}
+
+.impact h2 {
+    max-width: 1100px;
+    font-size: clamp(55px, 8vw, 115px);
+    line-height: 0.92;
+}
+
+.impact-list {
+    margin-top: 90px;
+}
+
+.impact-list > div {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+
+    padding: 30px 0;
+
+    border-top: 1px solid #bdb5af;
+}
+
+.impact-list span {
+    font-family: 'DM Serif Display', serif;
+    font-size: 25px;
+    color: #9b4d5a;
+}
+
+.impact-list p {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(28px, 4vw, 55px);
+}
+
+
+/* =========================================
+   08 — CRITICAL RESPONSE
+========================================= */
+
+.critical {
+    background: #f5f1ec;
+}
+
+.critical h2 {
+    max-width: 1100px;
+    font-size: clamp(55px, 8vw, 115px);
+    line-height: 0.92;
+}
+
+.critical-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+    margin-top: 90px;
+}
+
+.critical-grid > div {
+    min-height: 400px;
+
+    padding: 35px;
+
+    background: #ffffff;
+    border: 1px solid #ded8d2;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.critical-grid span {
+    color: #9b4d5a;
+
+    font-family: 'DM Serif Display', serif;
+    font-size: 25px;
+}
+
+.critical-grid h3 {
+    margin-top: auto;
+
+    font-size: 38px;
+}
+
+.critical-grid p {
+    margin-top: 25px;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #55504c;
+}
+
+
+/* =========================================
+   09 — MESSAGE
+========================================= */
+
+.message {
+    background: #d8a0a8;
+    color: #171515;
+}
+
+.message > p {
+    color: #171515;
+}
+
+.message h2 {
+    max-width: 1200px;
+
+    font-size: clamp(65px, 10vw, 145px);
+    line-height: 0.85;
+}
+
+.message-text {
+    max-width: 650px;
+
+    margin-top: 70px;
+    margin-left: auto;
+
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   10 — SOCIAL MOVEMENT
+========================================= */
+
+.movement {
+    background: #171515;
+    color: #f5f1ec;
+}
+
+.movement > p {
+    color: #d8a0a8;
+}
+
+.movement h2 {
+    font-size: clamp(65px, 10vw, 145px);
+    line-height: 0.85;
+}
+
+.movement > p:not(:first-child) {
+    max-width: 700px;
+
+    margin-top: 55px;
+
+    font-size: 17px;
+    line-height: 1.8;
+
+    color: #d9d2cd;
+}
+
+.movement-box {
+    margin-top: 90px;
+
+    max-width: 700px;
+
+    padding: 45px;
+
+    border: 1px solid rgba(245, 241, 236, 0.25);
+}
+
+.movement-box span {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+
+    color: #d8a0a8;
+}
+
+.movement-box strong {
+    display: block;
+
+    margin-top: 25px;
+
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(45px, 6vw, 80px);
+    font-weight: 400;
+}
+
+.movement-box p {
+    margin-top: 25px;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #d9d2cd;
+}
+
+
+/* =========================================
+   11 — SOURCES
+========================================= */
+
+.sources {
+    background: #ebe5df;
+}
+
+.sources h2 {
+    max-width: 1050px;
+
+    font-size: clamp(55px, 8vw, 115px);
+    line-height: 0.92;
+}
+
+.source-list {
+    margin-top: 90px;
+}
+
+.source-list > div {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+
+    padding: 30px 0;
+
+    border-top: 1px solid #bdb5af;
+}
+
+.source-list span {
+    font-family: 'DM Serif Display', serif;
+    font-size: 25px;
+    color: #9b4d5a;
+}
+
+.source-list p {
+    max-width: 850px;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #55504c;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    padding: 100px 8% 35px;
+
+    background: #0e0d0d;
+    color: #f5f1ec;
+}
+
+.footer-title {
+    font-size: clamp(55px, 9vw, 130px);
+    line-height: 0.85;
+}
+
+footer > p {
+    max-width: 400px;
+
+    margin-top: 50px;
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    color: #aaa19b;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 100px;
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(245, 241, 236, 0.2);
+
+    font-size: 10px;
+    letter-spacing: 2px;
+
+    color: #aaa19b;
+}
+
+
+/* =========================================
+   SCROLL ANIMATION
+========================================= */
+
+section {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .hero {
+        padding: 35px 7% 25px;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .hero-bottom {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .about,
+    .statistics,
+    .comparison,
+    .evidence,
+    .why,
+    .change,
+    .impact,
+    .critical,
+    .message,
+    .movement,
+    .sources {
+        padding: 100px 7%;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-top: 60px;
+    }
+
+    .stats-grid,
+    .comparison-grid,
+    .evidence-grid,
+    .why-grid,
+    .critical-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid,
+    .comparison-grid,
+    .evidence-grid,
+    .why-grid,
+    .critical-grid {
+        margin-top: 60px;
+    }
+
+    .concept-card,
+    .evidence-card {
+        min-height: 450px;
+    }
+
+    .change-item {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .impact-list > div,
+    .source-list > div {
+        grid-template-columns: 60px 1fr;
+    }
+
+    .message-text {
+        margin-left: 0;
+    }
+
+    .footer-bottom {
+        margin-top: 70px;
+    }
+}
+
+
+/* =========================================
+   VERY SMALL SCREENS
+========================================= */
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 65px;
+    }
+
+    .hero-subtitle {
+        font-size: 17px;
+    }
+
+    .hero-bottom {
+        font-size: 8px;
+    }
+
+    .concept-card,
+    .evidence-card,
+    .critical-grid > div {
+        padding: 28px;
+    }
+
+    .stat-card {
+        min-height: 280px;
+        padding: 30px;
+    }
+
+}
+
+/* =========================
+   VIDEO SECTION
+========================= */
+
+.video-section {
+    width: 100%;
+    padding: 120px 8%;
+    background: #e8e1da;
+}
+
+.video-section > p:first-child {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.video-section h2 {
+    font-size: clamp(45px, 7vw, 90px);
+    line-height: 0.95;
+    margin-bottom: 25px;
+}
+
+.video-intro {
+    max-width: 650px;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 55px;
+    color: #555;
+}
+
+.video-frame {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #111;
+    padding: 12px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
+}
+
+.video-frame video {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 650px;
+    object-fit: contain;
+    background: #000;
+}
